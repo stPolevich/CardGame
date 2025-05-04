@@ -1,0 +1,15 @@
+-- -- Добавляем поле turn_order в таблицу players
+-- ALTER TABLE players
+--     ADD COLUMN turn_order INTEGER NOT NULL DEFAULT 0,
+--     ADD COLUMN is_active BOOLEAN NOT NULL DEFAULT true;
+--
+-- -- Добавляем константы в таблицу game_sessions
+-- ALTER TABLE game_sessions
+--     ADD COLUMN max_players INTEGER NOT NULL DEFAULT 4,
+--     ADD COLUMN target_score INTEGER NOT NULL DEFAULT 30;
+--
+-- -- Добавляем индексы для оптимизации
+-- CREATE INDEX idx_game_session_status ON game_sessions(status);
+-- CREATE INDEX idx_player_game_session ON players(game_session_id);
+-- CREATE INDEX idx_turn_game_session ON turns(game_session_id);
+-- --CREATE INDEX idx_cards_game_session ON cards(game_session_id);

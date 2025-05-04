@@ -1,0 +1,38 @@
+-- -- Обновляем порядок ходов для игроков
+-- UPDATE players
+-- SET turn_order = 0,
+--     is_active = true
+-- WHERE id = 1;
+--
+-- UPDATE players
+-- SET turn_order = 1,
+--     is_active = true
+-- WHERE id = 2;
+--
+-- UPDATE players
+-- SET turn_order = 0,
+--     is_active = true
+-- WHERE id = 3;
+--
+-- UPDATE players
+-- SET turn_order = 1,
+--     is_active = false
+-- WHERE id = 4;
+--
+-- UPDATE players
+-- SET turn_order = 0,
+--     is_active = false
+-- WHERE id = 5;
+--
+-- -- Обновляем игровые сессии, добавляя константы
+-- UPDATE game_sessions
+-- SET max_players = 4,
+--     target_score = 30;
+--
+-- -- Добавляем больше карт для тестирования
+-- -- INSERT INTO cards (name, type, value, action_type, game_session_id) VALUES
+-- --                                                                         ('Small+3', 'POINTS', 3, NULL, 1),
+-- --                                                                         ('Medium+7', 'POINTS', 7, NULL, 1),
+-- --                                                                         ('Block2', 'ACTION', 1, 'BLOCK', 2),
+-- --                                                                         ('Steal5', 'ACTION', 5, 'STEAL', 2),
+-- --                                                                         ('DoubleDown2', 'ACTION', 2, 'DOUBLE_DOWN', 3);
